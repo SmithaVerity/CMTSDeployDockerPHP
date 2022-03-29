@@ -1,7 +1,12 @@
 sudo apt update
 sudo apt install docker.io --yes
 sudo apt install docker-compose.io --yes
-sudo docker pull bitnami/codeigniter
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+#sudo docker pull bitnami/codeigniter
 
 #sudo docker network create codeigniterdemo
 #sudo docker run --name mysql  --network codeignitordemo -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 -d mysql:5.7
