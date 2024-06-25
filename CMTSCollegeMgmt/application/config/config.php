@@ -35,7 +35,7 @@ $config['base_url'] = 'https://54.252.170.91/CMTSCollegeMgmt/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
